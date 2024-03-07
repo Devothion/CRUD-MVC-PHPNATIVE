@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajadores</title>
+</head>
+<body>
+    <h1>Lista de Trabajadores en Mediweb</h1>
+    <a href="../Controller/CrearTrabajadorController.php">Crear Trabajador</a>
+    <ul>
+        <?php foreach ($datos as $trabajadores): ?>
+            <li>
+                <?php echo $trabajadores['nombre']." ".$trabajadores['apellido'] ?> 
+                <a href="../Controller/EditarTrabajadorController.php?id=<?= $trabajadores['id'] ?>">Editar</a>
+                <a href="../Controller/EliminarTrabajadorController.php?id=<?= $trabajadores['id'] ?>">Eliminar</a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+    <a href="../index.php">Volver al Inicio</a>
+</body>
+</html>

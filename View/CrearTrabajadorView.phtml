@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creamos un nuevo Trabajador de Mediweb ❤️</h1>
+
+    <form action="./GuardarTrabajadorController.php" method="POST">
+        <input type="hidden" name="id" id="id">
+        <label for="nombre">Nombres: </label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="apellido">Apellidos: </label>
+        <input type="text" name="apellido" id="apellido"><br>
+        <label for="dni">DNI: </label>
+        <input type="number" name="dni" id="dni"><br>
+        <label for="celular">Celular: </label>
+        <input type="number" name="celular" id="celular"><br>
+        <a href="./TrabajadorController.php">Cancelar</a>
+        <button>Guardar</button>
+    </form>
+
+</body>
+</html>
